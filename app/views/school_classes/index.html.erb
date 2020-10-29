@@ -1,0 +1,6 @@
+<h2> Classes Available </h2>
+<ul>
+<% @classes.each do |c|%>
+<li><%=link_to c.title, school_class_path(c) %>  - Room <%=c.room_number%></li>
+<% end %>
+</ul>
